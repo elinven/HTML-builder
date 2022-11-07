@@ -24,7 +24,7 @@ async function copyDir(folderPath, folderCopyPath) {
 
 async function mergeStyles(sourcePath, outputPath) {
   const wStream = fs.createWriteStream(outputPath);
-  const folder = await fs.promises.readdir(sourcePath, {withFileTypes: true});
+  const folder = await fsPromises.readdir(sourcePath, {withFileTypes: true});
   for (const obj of folder) {
     if (obj.isFile()) {
       const fPath = path.join(sourcePath, obj.name);
