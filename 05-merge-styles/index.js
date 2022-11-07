@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-/*const pipeline = require('stream/promises');*/
 outputFolder = 'project-dist';
 outputFile = 'bundle.css';
 const srcPath = path.join(__dirname, 'styles');
@@ -18,7 +17,7 @@ const bundlePath = path.join(__dirname, outputFolder, outputFile);
         }
       }
     }
-    console.log(`Styles bundling has been successfully written to file "${outputFile}" in folder "${outputFolder}"`)
+    console.log(`The style bundling has been successfully written to file "${outputFile}" in "${outputFolder}" folder`)
   } catch (err) {
     console.log(`Error: ${err.message}`);
   }

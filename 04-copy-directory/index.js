@@ -15,7 +15,7 @@ const folderCopyName = 'files-copy';
       const sourceCopy = path.join(folderCopyPath, obj);
       await fs.copyFile(source, sourceCopy);
     }
-    console.log(`Folder "${dir}" has been successfully copied to folder "${dirCopy}"`);
+    console.log(`Folder "${dir}" has been successfully copied to "${dirCopy}" folder`);
   } catch (err) {
     console.log(`Error: ${err.message}`);
   }
